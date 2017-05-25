@@ -1,0 +1,48 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 25.86" style="" class="">
+<defs>
+<style>.cls-1{fill:#333;stroke:#333;stroke-miterlimit:10;}</style>
+</defs>
+<title>linija</title>
+<path class="cls-1 HigOGOaX_2" d="M1023.82,0.43L1066.33,25.36"></path>
+<path class="cls-1 HigOGOaX_3" d="M981,25.36L1023.82,0.43"></path>
+<path class="cls-1 HigOGOaX_0" d="M1066.33,25.36L2000,25.36"></path>
+<path class="cls-1 HigOGOaX_1" d="M981,25.36L0,25.36"></path>
+<style>
+.HigOGOaX_0{
+	stroke-dasharray:934 936;
+	stroke-dashoffset:935;
+}
+.start .HigOGOaX_0{
+	animation: HigOGOaX_draw 1000ms ease-in-out 0ms forwards;
+}
+.HigOGOaX_1{
+	stroke-dasharray:981 983;
+	stroke-dashoffset:982;
+}
+.start .HigOGOaX_1{
+	animation: HigOGOaX_draw 1000ms ease-in-out 0ms forwards;
+}
+.HigOGOaX_2{
+	stroke-dasharray:50 52;
+	stroke-dashoffset:51;
+}
+.start .HigOGOaX_2{
+	animation: HigOGOaX_draw 1000ms ease-in-out 0ms forwards;
+}
+.HigOGOaX_3{
+	stroke-dasharray:50 52;
+	stroke-dashoffset:51;
+}
+.start .HigOGOaX_3{
+	animation: HigOGOaX_draw 1000ms ease-in-out 0ms forwards;
+}
+@keyframes HigOGOaX_draw{
+	100%{ stroke-dashoffset:0;}
+}
+@keyframes HigOGOaX_fade{
+	0%{stroke-opacity:1;}
+	92.3076923076923%{stroke-opacity:1;}
+	100%{stroke-opacity:0;}
+}
+</style>
+</svg>
