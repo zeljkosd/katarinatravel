@@ -198,8 +198,32 @@ ul {
 section.fun-tours {
     padding-top: 80px;
 }
-
-
+.index-blog-item .img-item {
+    position: relative;
+}
+.index-blog-item .date-container {
+    background: rgba(0, 0, 0, 0.33) none repeat scroll 0 0;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    display: table;
+    height: 65px;
+    left: 10px;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    width: 65px;
+}
+.date-container p {
+	display: block;
+	font-weight: bold;
+	font-style: italic;
+	line-height: 1.2;
+}
+.date-container .date-content {
+    display: table-cell;
+    vertical-align: middle;
+}
 
 /* responsive */
 @media only screen and (max-width: 1680px) {
