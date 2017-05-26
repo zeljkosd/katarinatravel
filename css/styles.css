@@ -1,55 +1,47 @@
 /* sparga framework */
 @font-face {
-  font-family: 'MyWebFont';
-  src: url('../fonts/webfont.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-family: 'PlayfairDisplay-Regular';
+  src: url('../fonts/PlayfairDisplay-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/PlayfairDisplay-Regular?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/PlayfairDisplay-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/PlayfairDisplay-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/PlayfairDisplay-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
-
 ::-moz-selection { 
     color: #fff;
-    background: #1E275A;
+    background: #3F2F44;
 }
-
 ::selection {
     color: #fff;
-    background: #1E275A;
+    background: #3F2F44;
 }
-
 input:focus, textarea:focus {
-	background-color: #f5f5f5;
+	background-color: #3F2F44;
 }
-
 a {
     /* color: #F89422; */
 	transition: all 0.25s ease-in-out 0s;
 }
-
 a:focus {
     outline: none;
 }
-
 a:link, a:visited {
 	text-decoration: none;
 } 
-
 /* h1, h2, h3, h4, h5, h6, p { */
 	/* margin: 0; */
 /* } */
-
 body {
-	/* background-color: #e8e8e8; */
-    /* font-family: "Montserrat",sans-serif; */
+	background: rgba(0, 0, 0, 0) url("../images/body-bg.jpg") repeat scroll 0 0;
+    font-family: "PlayfairDisplay-Regular",sans-serif;
     /* font-size: 62.5%; */
+	font-size: 18px;
 	margin: 0;
 	padding: 0;
     /* overflow-x: hidden; */
 	/* color: #ccc; */
 }
-
 html, body {
     /* overflow-x: hidden!important; */
 }
@@ -57,24 +49,20 @@ html, body {
 h1+p {
 	margin-top: 0;
 }
-
 .header {
     background: #000 none repeat scroll 0 0;
 }
-
 ul {
-	list-style-image: url("../images/list-icons/list-icon.png");
-	/* list-style-type: none; */
+	/* list-style-image: url("../images/list-icons/list-icon.png"); */
+	list-style-type: none;
 	padding-left: 20px;
 	margin-left: 0;
 }
-
 .wraper {
 	/* font-size: 1.6em; */
 	/* padding: 2em; */
 	/* margin: 0 auto; */
 }
-
 * {
 	/* margin: 0; */
 	/* padding: 0; */
@@ -82,18 +70,134 @@ ul {
 	/* -moz-box-sizing: border-box; */
 	/* box-sizing: border-box; */
 }
-
 .container {
-    /* width: 1600px; */
-	/* max-width: 100%; */
+    width: 1280px;
+	max-width: 100%;
 }
-
 /* end of sparga framework */
 
-
-
-
-
+.prague-city-tours-content {
+	display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.prague-city-tours-content .main-title {
+	color: #282828;
+    font-size: 55px;
+	position: relative;
+	margin-bottom: 80px;
+}
+.prague-city-tours-content .main-title::after {
+    background: rgba(0, 0, 0, 0) url("../images/black-flag.png") repeat scroll 0 0;
+    content: "";
+    height: 13px;
+    left: 50%;
+    position: absolute;
+    top: 90px;
+    width: 50px;
+	transform: translateX(-50%);
+}
+.prague-city-tours-content .items {
+	color: #010101;
+    font-size: 18px;
+	text-transform: uppercase;
+}
+.prague-city-tours-content .items > li {
+    line-height: 50px;
+}
+.prague-city-tours-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.prague-city-tours-container {
+    display: flex;
+    padding: 50px 0;
+}
+.out-of-prague-tours {
+    background: rgba(0, 0, 0, 0) url("../images/out-of-prague-tours-bg.jpg") no-repeat scroll center center / cover ;
+    height: 630px;
+}
+.out-of-prague-tours {
+    position: relative;
+}
+.out-of-prague-tours-container {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.out-of-prague-tours-content .main-title {
+	color: #fff;
+    font-size: 55px;	
+	margin-bottom: 10px;
+}
+.out-of-prague-tours-content .subtitle {
+    color: #fff;
+    font-size: 21px;
+    font-style: italic;
+    text-align: center;
+	margin-bottom: 80px;
+	position: relative;
+}
+.out-of-prague-tours-content .subtitle::after {
+    background: rgba(0, 0, 0, 0) url("../images/white-flag.png") repeat scroll 0 0;
+    content: "";
+    height: 13px;
+    left: 50%;
+    position: absolute;
+    top: 40px;
+    width: 50px;
+	transform: translateX(-50%);
+}
+.out-of-prague-tours-content .items {
+    color: #fff;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.fun-tours-content .fun-tours-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.fun-tours .fun-tours-content {
+    display: flex;
+}
+.fun-tours-content .main-title {
+    color: #282828;
+    font-size: 55px;
+}
+.fun-tours-content .subtitle {
+    color: #282828;
+    font-size: 21px;
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 80px;
+	position: relative;
+}
+.fun-tours-content .items {
+    color: #282828;
+    font-size: 21px;
+	font-style: italic;
+	line-height: 48px;
+	text-transform: uppercase;
+}
+.fun-tours-content .subtitle::after {
+    background: rgba(0, 0, 0, 0) url("../images/black-flag.png") repeat scroll 0 0;
+    content: "";
+    height: 13px;
+    left: 50%;
+    position: absolute;
+    top: 40px;
+    width: 50px;
+	transform: translateX(-50%);
+}
+section.fun-tours {
+    padding-top: 80px;
+}
 
 
 
