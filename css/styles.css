@@ -1,13 +1,5 @@
 /* sparga framework */
-@font-face {
-  font-family: 'PlayfairDisplay-Regular';
-  src: url('../fonts/PlayfairDisplay-Regular.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/PlayfairDisplay-Regular?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/PlayfairDisplay-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/PlayfairDisplay-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/PlayfairDisplay-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
+
 ::-moz-selection { 
     color: #fff;
     background: #3F2F44;
@@ -34,7 +26,7 @@ a:link, a:visited {
 /* } */
 body {
 	background: rgba(0, 0, 0, 0) url("../images/body-bg.jpg") repeat scroll 0 0;
-    font-family: "PlayfairDisplay-Regular",sans-serif;
+    font-family: 'Playfair Display', serif;
     /* font-size: 62.5%; */
 	font-size: 18px;
 	margin: 0;
@@ -97,13 +89,16 @@ ul {
     width: 50px;
 	transform: translateX(-50%);
 }
-.prague-city-tours-content .items {
+.prague-city-tours-content .items li a {
+    line-height: 50px;
 	color: #010101;
     font-size: 18px;
 	text-transform: uppercase;
+	transition: all 0.25s ease-in-out 0s;
 }
-.prague-city-tours-content .items > li {
-    line-height: 50px;
+.prague-city-tours-content .items a:hover {
+    border-bottom: 1px solid #5b096c;
+    color: #5b096c;
 }
 .prague-city-tours-content {
     display: flex;
@@ -152,10 +147,18 @@ ul {
 	transform: translateX(-50%);
 }
 .out-of-prague-tours-content .items {
+    text-align: center;
+}
+.out-of-prague-tours-content .items li a {
     color: #fff;
     line-height: 48px;
-    text-align: center;
     text-transform: uppercase;
+	transition: all 0.25s ease-in-out 0s;
+    font-style: italic;
+}
+.out-of-prague-tours-content .items li a:hover {
+    border-bottom: 1px solid #fff;
+    color: #fff;
 }
 .fun-tours-content .fun-tours-items {
     display: flex;
@@ -173,7 +176,7 @@ ul {
 .fun-tours-content .subtitle {
     color: #282828;
     font-size: 21px;
-	font-style: italic;
+    font-style: italic;	
 	text-align: center;
 	margin-bottom: 80px;
 	position: relative;
@@ -181,7 +184,7 @@ ul {
 .fun-tours-content .items {
     color: #282828;
     font-size: 21px;
-	font-style: italic;
+    font-style: italic;	
 	line-height: 48px;
 	text-transform: uppercase;
 }
@@ -200,30 +203,132 @@ section.fun-tours {
 }
 .index-blog-item .img-item {
     position: relative;
+	overflow: hidden;
 }
 .index-blog-item .date-container {
     background: rgba(0, 0, 0, 0.33) none repeat scroll 0 0;
     border: 3px solid #fff;
     border-radius: 50%;
     color: #fff;
-    display: table;
     height: 65px;
     left: 10px;
     position: absolute;
     text-align: center;
     top: 10px;
     width: 65px;
+	transition: all 0.25s ease-in-out 0s;
 }
 .date-container p {
 	display: block;
 	font-weight: bold;
-	font-style: italic;
+    font-style: italic;
 	line-height: 1.2;
 }
-.date-container .date-content {
-    display: table-cell;
-    vertical-align: middle;
+.swiper-slide {
+    height: 90vh;
 }
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    background-image: url("../images/slider-left-arrow.png");
+    left: 10px;
+    right: auto;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    background-image: url("../images/slider-right-arrow.png");
+    left: auto;
+    right: 10px;
+}
+.swiper-button-prev, .swiper-button-next {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    height: 75px;    
+    width: 75px;
+	bottom: 50px;
+    top: auto;
+	transition: all 0.25s ease-in-out 0s;
+}
+.swiper-button-prev:hover, .swiper-button-next:hover {
+	background-color: rgba(255, 255, 255, 0.18);
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    left: 72%;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    background-image: url("../images/slider-right-arrow.png");
+    left: auto;
+    right: 19.5%;
+}
+section.books-about-prague {
+    background: #492551 none repeat scroll 0 0;
+    height: 475px;
+}
+.index-blog-content .main-title {
+	color: #282828;
+    font-size: 55px;
+	position: relative;
+	margin-bottom: 80px;
+	text-align: center;
+}
+.index-blog-content .main-title::after {
+    background: rgba(0, 0, 0, 0) url("../images/black-flag.png") repeat scroll 0 0;
+    content: "";
+    height: 13px;
+    left: 50%;
+    position: absolute;
+    top: 90px;
+    width: 50px;
+	transform: translateX(-50%);
+}
+section.index-blog {
+    padding: 150px 0 100px;
+}
+.date-container .day {
+    font-size: 30px;
+	margin-top: -3px;
+}
+.date-container .month {
+    font-size: 16px;
+}
+.index-blog-item .title {
+    color: #282828;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 20px;
+	font-size: 25px;
+	transition: all 0.25s ease-in-out 0s;
+}
+.index-blog-item .txt {
+	color: #282828;
+    margin-top: 24px;
+	font-size: 16px;
+	transition: all 0.25s ease-in-out 0s;
+}
+.index-blog-item .mask {
+    background: #000 none repeat scroll 0 0;
+    height: 500px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+	transition: all 0.25s ease-in-out 0s;
+}
+.index-blog-item:hover .mask {
+	opacity: 0.4;
+}
+.index-blog-item .img-item img {
+	width: 100%;
+}
+.index-blog-item:hover .title, .index-blog-item:hover .txt {
+	color: #492551;
+}
+.index-blog-item:hover .index-blog-item .date-container {
+	background: #fff none repeat scroll 0 0!important;
+    color: #252525;
+}
+
+
 
 /* responsive */
 @media only screen and (max-width: 1680px) {
