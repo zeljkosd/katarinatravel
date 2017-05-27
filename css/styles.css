@@ -32,7 +32,7 @@ body {
 	margin: 0;
 	padding: 0;
     /* overflow-x: hidden; */
-	/* color: #ccc; */
+	color: #282828;
 }
 html, body {
     /* overflow-x: hidden!important; */
@@ -95,6 +95,7 @@ ul {
     font-size: 18px;
 	text-transform: uppercase;
 	transition: all 0.25s ease-in-out 0s;
+	border-bottom: 0px solid #5b096c;
 }
 .prague-city-tours-content .items a:hover {
     border-bottom: 1px solid #5b096c;
@@ -155,6 +156,7 @@ ul {
     text-transform: uppercase;
 	transition: all 0.25s ease-in-out 0s;
     font-style: italic;
+	border-bottom: 0px solid #5b096c;
 }
 .out-of-prague-tours-content .items li a:hover {
     border-bottom: 1px solid #fff;
@@ -176,17 +178,23 @@ ul {
 .fun-tours-content .subtitle {
     color: #282828;
     font-size: 21px;
-    font-style: italic;	
-	text-align: center;
-	margin-bottom: 80px;
-	position: relative;
+    font-style: italic;
+    margin-bottom: 50px;
+    position: relative;
+    text-align: center;
 }
-.fun-tours-content .items {
+.fun-tours-content .items a {
     color: #282828;
     font-size: 21px;
     font-style: italic;	
 	line-height: 48px;
 	text-transform: uppercase;
+	transition: all 0.25s ease-in-out;
+	border-bottom: 0px solid #5b096c;
+}   
+.fun-tours-content .items li a:hover {
+    border-bottom: 1px solid #492551;
+    color: #492551;
 }
 .fun-tours-content .subtitle::after {
     background: rgba(0, 0, 0, 0) url("../images/black-flag.png") repeat scroll 0 0;
@@ -199,6 +207,9 @@ ul {
 	transform: translateX(-50%);
 }
 section.fun-tours {
+    /* padding-top: 80px; */
+}
+.fun-tours-balloon, .fun-tours-beer {
     padding-top: 80px;
 }
 .index-blog-item .img-item {
@@ -217,6 +228,7 @@ section.fun-tours {
     top: 10px;
     width: 65px;
 	transition: all 0.25s ease-in-out 0s;
+	z-index: 1;
 }
 .date-container p {
 	display: block;
@@ -323,12 +335,88 @@ section.index-blog {
 .index-blog-item:hover .title, .index-blog-item:hover .txt {
 	color: #492551;
 }
-.index-blog-item:hover .index-blog-item .date-container {
+.index-blog-item:hover .img-item .date-container {
 	background: #fff none repeat scroll 0 0!important;
     color: #252525;
 }
-
-
+.footer-container {
+    height: 100%;
+    position: relative;
+}
+.footer .bottom {
+    bottom: 25px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+	z-index: 2;
+}
+footer.footer {
+    position: relative;
+}
+.footer-bottom-bg {
+    background: rgba(0, 0, 0, 0) url("../images/footer-bottom-bg.png") repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 73px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+	mix-blend-mode: overlay;
+}
+.footer .bottom .span {
+    color: #282828;
+    font-size: 18px;
+}
+.footer .top h3 {
+    font-size: 24px;
+    margin-top: 65px;
+}
+.top .form-label {
+    font-size: 16px;
+    margin-top: 10px;
+}
+.footer .phone a {
+	font-size: 24px;
+	color: #282828;
+}
+.scalateam-logo {
+	transition: all 0.1s ease-in-out 0s;
+}
+.scalateam-logo:hover {
+    opacity: 0.6;
+}
+.footer-social-icons img {
+	transition: all 0.1s ease-in-out 0s;
+}
+.footer-social-icons:hover img:hover {
+    opacity: 0.6;
+}
+.phone a {
+	transition: all 0.1s ease-in-out 0s;
+}
+.phone a:hover {
+	opacity: 0.6;
+}
+.footer-newsletter {
+    border-radius: 72px;
+    margin-top: 10px;
+}
+.top ul.menu {
+    color: #252525;
+    font-size: 24px;
+    line-height: 53px;
+    margin-top: 40px;
+    text-align: right;
+}
+.top ul.menu a {
+    color: #232323;
+    font-size: 24px;
+	transition: all 0.1s ease-in-out 0s;
+}
+.top ul.menu a:hover {
+    opacity: 0.6;
+}
 
 /* responsive */
 @media only screen and (max-width: 1680px) {
