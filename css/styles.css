@@ -417,6 +417,44 @@ footer.footer {
 .top ul.menu a:hover {
     opacity: 0.6;
 }
+.menu-top {
+    background: transparent;
+    height: 120px;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+.top-menu-container {
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+.top-menu-container li {
+    display: inline-block;
+    padding: 40px 20px 20px 20px ;
+}
+.top-menu-container li a{
+    color: #fff;
+	font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* responsive */
 @media only screen and (max-width: 1680px) {
