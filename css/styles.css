@@ -238,6 +238,8 @@ section.fun-tours {
 }
 .index-main-slider .swiper-container .swiper-slide img {
     height: 90vh;
+    object-fit: cover;
+    width: 100%;
 }
 /* slider */
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
@@ -480,15 +482,41 @@ footer.footer {
 .footer-social-icons > a {
 	margin-right: 20px;
 }
+.books-about-prague-txt .main-title {
+	color: #fff;
+    font-size: 50px;
+    position: relative;
+}
+.books-about-prague-txt .main-title::after {
+    background: rgba(0, 0, 0, 0) url("../images/white-flag.png") repeat scroll 0 0;
+    content: "";
+    height: 13px;
+    left: 0;
+    position: absolute;
+    top: 75px;
+    width: 50px;
+}
+.books-about-prague-txt .main-text {
+    color: #fff;
+    font-size: 21px;
+    line-height: 1.4;
+    margin-top: 65px;
+}
+.books-about-prague-content {
+    display: flex;
+}
+.books-about-prague-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.index-book-slider .swiper-button-next {
+    left: -50px;
+}
 
-
-
-
-
-
-
-
-
+.index-book-slider .swiper-button-prev {
+    left: 0;
+}
 
 /* responsive */
 @media only screen and (max-width: 1680px) {
