@@ -270,10 +270,26 @@ section.fun-tours {
     background-size: auto auto;
     border: 1px solid rgba(255, 255, 255, 0.4);
     height: 75px;    
-    width: 75px;
-	bottom: 50px;
+    width: 75px;	
     top: auto;
 	transition: all 0.25s ease-in-out 0s;
+}
+.books-about-prague .swiper-button-prev, .books-about-prague .swiper-button-next {
+	bottom: 50px;
+}
+.hiden {
+	display: none;
+}
+.index-main-slider .swiper-button-prev, .index-main-slider .swiper-button-next {
+	bottom: 140px;
+}
+.index-main-slider .swiper-button-next, .index-main-slider .swiper-container-rtl .swiper-button-prev {
+	left: auto;
+    right: 275px;
+}
+.index-main-slider .swiper-button-prev, .index-main-slider .swiper-container-rtl .swiper-button-next {
+	right: 370px;
+    left: auto;
 }
 .swiper-button-prev:hover, .swiper-button-next:hover {
 	background-color: rgba(255, 255, 255, 0.18);
@@ -485,7 +501,10 @@ footer.footer {
     position: absolute;
     top: 0;
 	font-size: 16px;
-	
+	transition: all 0.25s ease-in-out 0s;
+}
+.footer input.submit:hover {
+	background-color:#000;
 }
 .footer .top .social {    
     margin-top: 50px;
@@ -526,12 +545,6 @@ footer.footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.index-book-slider .swiper-button-next {
-    
-}
-.index-book-slider .swiper-button-prev {
-    
 }
 .img-header {
     height: 432px;
@@ -729,6 +742,14 @@ section.blog-group {
 }
 .inner-slider .swiper-button-prev, .inner-slider .swiper-button-next {
 	bottom: 32px;
+}
+.books-about-prague .swiper-button-next, .books-about-prague .swiper-container-rtl .swiper-button-prev {
+	left: auto;
+    right: 150px;
+}
+.books-about-prague .swiper-button-prev, .books-about-prague .swiper-container-rtl .swiper-button-next {
+    left: auto;
+    right: 224px;
 }
 
 /* responsive */

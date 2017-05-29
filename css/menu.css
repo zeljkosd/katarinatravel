@@ -65,9 +65,7 @@
 .top-menu-container li ul li a:hover::before {
     width: 100px;
 }
-.books-navigation .swiper-button-prev {
-    margin-left: -94px;
-}
+
 section.fun-tours {
     overflow: hidden;
 }
