@@ -244,13 +244,9 @@ section.fun-tours {
 /* slider */
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
     background-image: url("../images/slider-left-arrow.png");
-    left: 10px;
-    right: auto;
 }
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
     background-image: url("../images/slider-right-arrow.png");
-    left: auto;
-    right: 10px;
 }
 .swiper-button-prev, .swiper-button-next {
     background-position: center center;
@@ -267,12 +263,11 @@ section.fun-tours {
 	background-color: rgba(255, 255, 255, 0.18);
 }
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
-    left: 72%;
+    
 }
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
     background-image: url("../images/slider-right-arrow.png");
-    left: auto;
-    right: 19.5%;
+    
 }
 .index-book-slider .swiper-slide {
 	background: transparent none repeat scroll 0 0!important;
@@ -517,10 +512,10 @@ footer.footer {
     justify-content: center;
 }
 .index-book-slider .swiper-button-next {
-    left: -50px;
+    
 }
 .index-book-slider .swiper-button-prev {
-    left: 0;
+    
 }
 .img-header {
     height: 432px;
@@ -563,6 +558,148 @@ section.blog-group {
 }
 .load-more-btn:hover {
 	opacity: 0.8;
+}
+.see-also-prev .prev {
+    height: 210px;
+    mask: url("../img/see-also-prev.svg") no-repeat 0 0 add match-source;
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+}
+.see-also-next .next {
+	height: 210px;
+	-webkit-mask: url("../img/see-also-next.svg") no-repeat;
+	mask: url("../img/see-also-next.svg") no-repeat right 0 add match-source;
+	object-fit: cover;
+    object-position: center center;
+    width: 100%;
+}
+.blog .date-content {
+    background: rgba(0, 0, 0, 0) url("../images/blog-date.png") no-repeat scroll center center;
+    height: 99px;
+    width: 93px;
+}
+.date-container {
+	position: relative;
+}
+.date-content {
+	position: absolute;
+}
+.inner-slider .swiper-slide > img {
+    width: 100%;
+}
+.date-content {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.blog h2 {
+    font-size: 80px;
+    margin: 100px 0 120px;
+	position: relative;
+}
+.blog h2::after {
+    background: rgba(0, 0, 0, 0) url("../images/black-flag.png") no-repeat scroll 0 0;
+    content: "";
+    height: 13px;
+    left: 50%;
+    position: absolute;
+    top: 115px;
+    transform: translateX(-50%);
+    width: 50px;
+}
+.see-also-prev, .see-also-next {
+    display: block;
+    position: relative;
+}
+.see-also .mask {
+    background: transparent; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(transparent, transparent, #000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(transparent, transparent, #000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(transparent, transparent, #000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(transparent, transparent, #000); /* Standard syntax */
+	height: 210px;
+    left: 0;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.see-also-prev p {
+    bottom: 15px;
+    color: #fff;
+    font-size: 24px;
+    position: absolute;
+    right: 15px;
+    text-transform: uppercase;
+    z-index: 1;
+}
+.see-also-next p {
+    bottom: 15px;
+    color: #fff;
+    font-size: 24px;
+    position: absolute;
+    left: 15px;
+    text-transform: uppercase;
+    z-index: 1;
+}
+.blog .date-container .day {
+    color: #fff;
+    font-size: 50px;
+    font-style: normal;
+    margin-top: -15px;
+    text-align: center;
+}
+.blog .date-container .month {
+    color: #fff;
+    font-style: normal;
+    text-align: center;
+}
+.main-txt > h3 {
+    font-size: 35px;
+    margin: 40px 0 20px;
+}
+.see-also {
+    margin: 180px 0 80px;
+}
+.see-also .main-title {
+    font-size: 35px;
+    margin-bottom: 85px;
+    text-align: center;
+	position: relative;
+}
+.see-also .main-title::after {
+    background: rgba(0, 0, 0, 0) url("../images/black-flag.png") no-repeat scroll 0 0;
+    content: "";
+    height: 13px;
+    left: 50%;
+    position: absolute;
+    top: 60px;
+    transform: translateX(-50%);
+    width: 50px;
+}
+.inner-slider .mask {
+    background: transparent; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(transparent, transparent, #000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(transparent, transparent, #000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(transparent, transparent, #000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(transparent, transparent, #000); /* Standard syntax */
+    left: 0;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+	height: 100%;
+    width: 100%;
+}
+.inner-slider .swiper-button-prev, .inner-slider .swiper-container-rtl .swiper-button-next {
+	left: auto;
+	right: 106px;
+}
+.inner-slider .swiper-button-next, .inner-slider .swiper-container-rtl .swiper-button-prev {
+	right: 32px;
+}
+.inner-slider .swiper-button-prev, .inner-slider .swiper-button-next {
+	bottom: 32px;
 }
 
 /* responsive */
