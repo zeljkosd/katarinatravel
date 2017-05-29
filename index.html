@@ -61,10 +61,32 @@
 		height: auto !important;
 		z-index: 111;
 	}
-	.swiper-container {
-		width: 100%;
-		height: 90%;
-	} 
+	
+    .index-book-slider .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        width: 80%;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .index-book-slider .swiper-slide:nth-child(2n) {
+        width: 60%;
+    }
+    .index-book-slider .swiper-slide:nth-child(3n) {
+        width: 40%;
+    }
 </style>
 </head>
 
@@ -188,7 +210,7 @@
 			</div>			
 		</nav>
 		<div class="container-fluid">
-			<div class="row">
+			<div class="row index-main-slider">
 				<div class="swiper-container">
 					<!-- Additional required wrapper -->
 					<div class="swiper-wrapper">
@@ -918,9 +940,19 @@
 						Find inspiration for your next trip and get advice from travelers who have been there before. 
 					</p>						
 				</div>
-				<div class="col-md-6 books-about-prague-imgs">	
-					<img src="images/.jpg" alt="" title="" width="" height="" />
-					<img src="images/.jpg" alt="" title="" width="" height="" />
+				<div class="col-md-6 books-about-prague-imgs index-book-slider">	
+					<div class="swiper-container">
+					<div class="swiper-wrapper">
+						Slides
+						<div class="swiper-slide">
+							<img src="images/index-book-img-1.jpg" alt="Katarina Tours" title="Katarina Tours" width="" height="" />
+						</div>
+						<div class="swiper-slide">
+							<img src="images/index-book-img-2.jpg" alt="Katarina Tours" title="Katarina Tours" width="" height="" />
+						</div>
+					</div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
 				</div>					
 			</div>
 		</div>		
@@ -991,8 +1023,8 @@
 						Receive News, Info and Offers
 					</p>
 					<form action="" class="footer-newsletter" method="post">
-						<input class="email" type="email" name="email" value="Email">	
-						<input class="submit"  type="submit" value="Submit">
+						<input class="email" type="email" name="email" value="" placeholder="Email">	
+						<input class="submit"  type="submit" value="Send">
 					</form> 
 					<h3 class="social">
 						Social
@@ -1086,7 +1118,7 @@ $('body').mousemove(function(e){
 <script>
 $(document).ready(function () {
 //initialize swiper when document ready  
-var mySwiper = new Swiper ('.swiper-container', {
+var mySwiper = new Swiper ('.index-main-slider .swiper-container', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -1095,6 +1127,15 @@ var mySwiper = new Swiper ('.swiper-container', {
   prevButton: '.swiper-button-prev'
 })        
 });  
+</script>
+<script>
+var swiper = new Swiper('.index-book-slider .swiper-container', {
+	pagination: '.swiper-pagination',
+	slidesPerView: 'auto',
+	paginationClickable: true,
+	nextButton: '.swiper-button-next',
+prevButton: '.swiper-button-prev'
+});
 </script>
 </body>
 </html>

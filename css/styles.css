@@ -9,7 +9,7 @@
     background: #3F2F44;
 }
 input:focus, textarea:focus {
-	background-color: #3F2F44;
+	/* background-color: #3F2F44; */
 }
 a {
     /* color: #F89422; */
@@ -236,9 +236,10 @@ section.fun-tours {
     font-style: italic;
 	line-height: 1.2;
 }
-.swiper-slide {
+.index-main-slider .swiper-container .swiper-slide img {
     height: 90vh;
 }
+/* slider */
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
     background-image: url("../images/slider-left-arrow.png");
     left: 10px;
@@ -271,9 +272,13 @@ section.fun-tours {
     left: auto;
     right: 19.5%;
 }
+.index-book-slider .swiper-slide {
+	background: transparent none repeat scroll 0 0!important;
+}
+/* end of slider */
+
 section.books-about-prague {
     background: #492551 none repeat scroll 0 0;
-    height: 475px;
 }
 .index-blog-content .main-title {
 	color: #282828;
@@ -440,12 +445,41 @@ footer.footer {
     color: #fff;
 	font-size: 18px;
 }
-
-
-
-
-
-
+.footer input.email {
+    border: 1px solid #c1ba98;
+    border-radius: 20px;
+    color: #282828;
+    padding: 10px 20px;
+	font-size: 16px;
+	width: 290px;
+}
+.footer-newsletter {
+	position: relative;
+}
+.footer input.submit {
+    background-color: #492551;
+    border: 1px solid #492551;
+    border-radius: 20px;
+    color: #fff;
+    left: 260px;
+    padding: 10px 25px;
+    position: absolute;
+    top: 0;
+	font-size: 16px;
+	
+}
+.footer .top .social {    
+    margin-top: 50px;
+}
+.footer .top .contact {
+    margin-top: 23px;
+}
+.footer-social-icons {
+    margin-top: 15px;
+}
+.footer-social-icons > a {
+	margin-right: 20px;
+}
 
 
 
