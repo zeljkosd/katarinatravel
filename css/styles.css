@@ -68,6 +68,22 @@ ul {
 }
 /* end of sparga framework */
 
+.tekstt {
+	opacity: 0;
+	transition: all 0.65s ease-in-out 2s;
+}
+.start.tekstt {
+	opacity: 1
+}
+.loader-img {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	width: 164px !important;
+	height: auto !important;
+	z-index: 111;
+}
 .prague-city-tours-content {
 	display: flex;
     flex-direction: column;
@@ -619,6 +635,19 @@ section.blog-group {
     background: -moz-linear-gradient(transparent, transparent, #000); /* For Firefox 3.6 to 15 */
     background: linear-gradient(transparent, transparent, #000); /* Standard syntax */
 	height: 210px;
+    left: 0;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.index-main-slider .mask {
+    background: transparent; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(transparent, transparent, #000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(transparent, transparent, #000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(transparent, transparent, #000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(transparent, transparent, #000); /* Standard syntax */
+	height: 100%;
     left: 0;
     max-width: 100%;
     position: absolute;
