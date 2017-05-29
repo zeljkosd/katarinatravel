@@ -1,0 +1,62 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 13.94" class="" style="position: absolute; top: 100px;">
+	<defs>
+		<style>
+			.cls-1 {
+				fill: none;
+				stroke: #fff;
+				stroke-miterlimit: 10;
+			}
+		</style>
+	</defs>
+	<title>linija2</title>
+	<path class="cls-1 OjErwGpi_0" d="M1046.33,13.44L2000,13.44"></path>
+	<path class="cls-1 OjErwGpi_1" d="M1001,13.44L0,13.44"></path>
+	<path class="cls-1 OjErwGpi_2" d="M1023,0.44L1001,13.44"></path>
+	<path class="cls-1 OjErwGpi_3" d="M1023,0.44L1046.33,13.44"></path>
+	<style>
+		.OjErwGpi_0 {
+			stroke-dasharray: 954 956;
+			stroke-dashoffset: 955;
+		}
+		.start .OjErwGpi_0 {
+			animation: OjErwGpi_draw 500ms ease-in-out 300ms forwards;
+		}
+		.OjErwGpi_1 {
+			stroke-dasharray: 1001 1003;
+			stroke-dashoffset: 1002;
+		}
+		.start .OjErwGpi_1 {
+			animation: OjErwGpi_draw 500ms ease-in-out 300ms forwards;
+		}
+		.OjErwGpi_2 {
+			stroke-dasharray: 26 28;
+			stroke-dashoffset: 27;
+		}
+		.start .OjErwGpi_2 {
+			animation: OjErwGpi_draw 300ms ease-in-out 0ms forwards;
+		}
+		.OjErwGpi_3 {
+			stroke-dasharray: 27 29;
+			stroke-dashoffset: 28;
+		}
+		.start .OjErwGpi_3 {
+			animation: OjErwGpi_draw 300ms ease-in-out 0ms forwards;
+		}
+		@keyframes OjErwGpi_draw {
+			100% {
+				stroke-dashoffset: 0;
+			}
+		}
+		@keyframes OjErwGpi_fade {
+			0% {
+				stroke-opacity: 1;
+			}
+			92.3076923076923% {
+				stroke-opacity: 1;
+			}
+			100% {
+				stroke-opacity: 0;
+			}
+		}
+	</style>
+</svg>
