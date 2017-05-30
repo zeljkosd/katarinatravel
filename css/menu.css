@@ -1,3 +1,6 @@
+.inner-page {
+	padding-top: 140px
+}
 .top-menu-container {
     padding: 0;
     position: relative;
@@ -27,7 +30,7 @@
     top: 96px;
     transform: translateX(-50%);
 }
-.scrolled .top-menu-container li ul {
+.scrolled .top-menu-container li ul, .inner-page .top-menu-container li ul {
     top: 100px;
 }
 .top-menu-container li ul li span {
@@ -49,7 +52,7 @@
     width: 100%;
 	position: relative;
 }
-.scrolled .top-menu-container li ul li a {
+.scrolled .top-menu-container li ul li a, .inner-page .top-menu-container li ul li a {
     font-size: 16px;
 }
 .top-menu-container li ul li a::before {
@@ -69,11 +72,11 @@
 section.fun-tours {
     overflow: hidden;
 }
-.scrolled .logo-container {
+.scrolled .logo-container, .inner-page .logo-container {
     background: #fff none repeat scroll 0 0;
     width: 100%;
 }
-.scrolled .menu-container {
+.scrolled .menu-container, .inner-page .menu-container {
     background: #fff none repeat scroll 0 0;
     border-top: 1px solid #bebebe;
     border-bottom: 1px solid #bebebe;
@@ -84,30 +87,30 @@ section.fun-tours {
 .logo {
 	transition: all 0.25s ease-in-out;
 }
-.scrolled .logo {
+.scrolled .logo, .inner-page .logo {
 	top: -100px;
 }
 .home-link {
 	display: block;
 }
-.scrolled .home-link {
+.scrolled .home-link, .inner-page .home-link {
 	display: none;
 }
 .home-link-color {
 	display: none;
 }
-.scrolled .home-link-color {
+.scrolled .home-link-color, .inner-page .home-link-color {
 	display: block;
 }
-.scrolled .menu-arrow {
+.scrolled .menu-arrow, .inner-page .menu-arrow {
     display: none;
 }
-.scrolled .top-menu-container li ul {
+.scrolled .top-menu-container li ul, .inner-page .top-menu-container li ul {
     background: rgba(255, 255, 255, 0.95) none repeat scroll 0 0;
     top: 61px;
 }
 
-.scrolled .top-menu-container li ul li span {
+.scrolled .top-menu-container li ul li span, .inner-page .top-menu-container li ul li span {
     color: #492551;
 }
 .logo-color {
@@ -121,15 +124,15 @@ section.fun-tours {
 	transition: all 0.45s ease-in-out;
 	transform: translateX(-50%);
 }
-.scrolled .logo-color {
+.scrolled .logo-color, .inner-page .logo-color {
 	display: block;
     top: 0px;
 }
-.scrolled .top-menu-container li {
+.scrolled .top-menu-container li, .inner-page .top-menu-container li {
     display: inline-block;
     padding: 10px 20px 20px;
 }
-.scrolled .top-menu-container li a {
+.scrolled .top-menu-container li a, .inner-page .top-menu-container li a {
     color: #492551;
     font-size: 18px;
     position: relative;
@@ -176,12 +179,12 @@ section.fun-tours {
 	background: #fff;
     color: #492551;
 }
-.scrolled .book-button {
+.scrolled .book-button, .inner-page .book-button {
     border: 1px solid #492551;
     color: #492551;
     top: 20px;
 }
-.scrolled .book-button:hover {
+.scrolled .book-button:hover, .inner-page .book-button:hover {
     background: #492551;
     color: #fff;
 }

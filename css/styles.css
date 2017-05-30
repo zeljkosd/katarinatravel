@@ -50,6 +50,9 @@ ul {
 	padding-left: 20px;
 	margin-left: 0;
 }
+.main-txt ul {
+	list-style-image: url("../images/flag-list-icon.png");
+}
 .wraper {
 	/* font-size: 1.6em; */
 	/* padding: 2em; */
@@ -697,7 +700,7 @@ section.blog-group {
     font-style: normal;
     text-align: center;
 }
-.main-txt > h3 {
+.main-txt h3 {
     font-size: 35px;
     margin: 40px 0 20px;
 }
@@ -751,7 +754,133 @@ section.blog-group {
     left: auto;
     right: 224px;
 }
-
+.col-md-2.col-2-5 {
+    text-align: center;
+    width: 20%;
+}
+.tour-panel-items {
+    background: #7e6379 none repeat scroll 0 0;
+    display: inline-block;
+    height: 164px;
+    margin: 20px;
+    text-align: center;
+    vertical-align: middle;
+    width: 164px;
+}
+.tour-panel-items a {
+    color: #fff;
+	display: table;
+    height: 100%;
+    width: 100%;	
+}
+.tour-panel-content {
+	display: table-cell;
+    vertical-align: middle;
+}
+.tour-panel-items a:hover {
+    opacity: 0.7;	
+}
+.tour-panel-container {
+    margin-top: 35px;
+	text-align: center;	
+}
+.tour-map {
+	display: none;
+}
+.main-txt.tour::before {
+	background: rgba(0, 0, 0, 0) url("../images/black-flag.png") no-repeat scroll 0 0;
+    content: "";
+    height: 13px;
+    left: 50%;
+    position: absolute;
+    top: -80px;
+    transform: translateX(-50%);
+    width: 50px;
+}
+.main-txt.tour {
+    margin-top: 135px;
+	position: relative;
+}
+.main-txt {
+	line-height: 26px;
+}
+.main-txt li {
+    font-size: 20px;
+    line-height: 34px;
+}
+.transport .main-title, .about .main-title {
+    border-bottom: 1px solid #bcb8ae;
+    color: #492551;
+    font-size: 55px;
+    padding: 60px 0;
+    text-align: center;
+}
+.main-txt.transport {
+    margin-top: 135px;
+    position: relative;
+}
+section.transport, section.about {
+    padding-bottom: 110px;
+}
+.main-txt.tour li {
+	list-style: outside none none;
+}
+.book-btn {
+    border: 1px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    display: inline-block;
+    margin-top: 50px;
+    max-width: 200px;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    width: auto;
+}
+.book-btn:hover {
+    color: #492551;
+    background: #fff none repeat scroll 0 0;
+}
+.books-about-prague-txt {
+    padding-right: 130px;
+}
+.about-banner {
+    background: rgba(247, 229, 189, 0.5) none repeat scroll 0 0;
+    padding: 110px;
+    text-align: center;
+	position: relative;
+}
+.about-banner p {
+    font-size: 35px;
+}
+.about-banner > img {
+    bottom: -20px;
+    position: absolute;
+    right: -50px;
+}
+.about-logo-content {
+    background: rgba(247, 229, 189, 0.5) none repeat scroll 0 0;
+    padding: 170px 0;
+    text-align: center;
+}
+.who-we-are-container {
+    display: flex;
+}
+.who-we-are-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 98px 10px 60px;
+}
+.what-we-do-container {
+    display: flex;
+}
+.what-we-do-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 98px 10px 60px;
+}
 /* responsive */
 @media only screen and (max-width: 1680px) {
     
