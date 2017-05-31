@@ -881,6 +881,48 @@ section.transport, section.about {
     justify-content: center;
     padding: 10px 98px 10px 60px;
 }
+.pop-up-video {
+    box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.5);
+    display: none;
+    left: 50%;
+    position: fixed;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0px);
+    z-index: 1111111111;
+}
+.close-btn {
+    align-items: center;
+    background: #000 none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    font-size: 40px;
+    height: 50px;
+    justify-content: center;
+    position: absolute;
+    right: -20px;
+    text-align: center;
+    top: -25px;
+    width: 50px;
+	cursor: pointer;
+}
+.close-location {
+    align-items: center;
+    background: #000 none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    font-size: 40px;
+    height: 50px;
+    justify-content: center;
+    position: absolute;
+    right: -20px;
+    text-align: center;
+    top: -25px;
+    width: 50px;
+	cursor: pointer;
+}
+
 /* responsive */
 @media only screen and (max-width: 1680px) {
     
