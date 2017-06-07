@@ -433,20 +433,19 @@ var mySwiper = new Swiper ('.inner-slider .swiper-container', {
 </script>
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 <script>
-var mapCanvas = document.getElementById("map");
-var mapOptions = {
-    center: new google.maps.LatLng(50.069765, 14.440888),
-	disableDefaultUI:true,
-	scrollwheel: false,
-	zoom: 10
-}
-var map = new google.maps.Map(mapCanvas, mapOptions);
-</script>
-<script>
 $(document).ready(function(){
     $(".location, .close-location").click(function(){
-        $(".tour-map").slideToggle();
-    });
+        $(".tour-map").slideToggle(500, function(){
+		var mapCanvas = document.getElementById("map");
+		var mapOptions = {
+			center: new google.maps.LatLng(50.069765, 14.440888),
+			disableDefaultUI:true,
+			scrollwheel: false,
+			zoom: 10
+		}
+		var map = new google.maps.Map(mapCanvas, mapOptions);
+		});
+	});
     $(".video-btn").click(function(e){
 		e.stopPropagation();
 		$('.pop-up-video').fadeIn();
